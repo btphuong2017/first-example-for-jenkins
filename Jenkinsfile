@@ -1,6 +1,6 @@
 /* groovylint-disable-next-line CompileStatic */
 pipeline {
-    agent { docker { image 'node:16.16.0-alpine' } }
+    agent any
     stages {
         stage('Unit Test') {
           steps {
