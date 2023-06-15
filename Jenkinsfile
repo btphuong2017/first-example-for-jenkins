@@ -5,7 +5,7 @@ pipeline {
         stage('Unit Test') {
           steps {
             sh 'npm install'
-            sh 'npm test'
+            sh 'ng test  --watch=false --browsers=ChromeHeadlessNoSandbox && echo "Unit Test Passed"'
           }
         }
 
